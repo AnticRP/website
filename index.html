@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnticRP</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="https://rawgit.com/vitmalina/w2ui/master/dist/w2ui.min.css">
+    <script src="https://kit.fontawesome.com/af457182b0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="logo">AnticRP</div>
+        <nav class="nav-links">
+            <ul>
+                <li><a href="#">Strona główna</a></li>
+                <li><a href="https://sklep.anticrp.pl/">Sklep</a></li>
+                <li><a href="#">O nas</a></li>
+                <li><a href="#">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>AnticRP</h1>
+            <p style="font-weight: bold;">Antyczny survival z nutką roleplay'u!</p>
+            <br />
+            <a onclick="popup1();" style="cursor: pointer;" class="cta-btn">Wejdź do gry!</a>
+            <br />
+            <br />
+            <a href="https://sklep.anticrp.pl/" style="cursor: pointer;" class="cta-btn">Wyślij donejta!</a>
+        </div>
+    </section>
+
+    <main class="main-content">
+        <div class="product-grid">
+            <div onclick="popup2();" class="card">
+                <h2>Szybkość!</h2>
+            </div>
+            <div onclick="popup3();" class="card">
+                <h2>Voice Chat!</h2>
+            </div>
+            <div onclick="popup4();" class="card">
+                <h2>Shadery!</h2>
+            </div>
+            <div onclick="popup5();" class="card">
+                <h2>Modele 3D!</h2>
+            </div>
+            <div onclick="popup6();" class="card">
+                <h2>Duża Mapa!</h2>
+            </div>
+            <div onclick="popup7();" class="card">
+                <h2>Urozmaicone PvP!</h2>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="social-icons">
+            <a href="https://discord.gg/werVgumUSp" class="social-icon"><i class="fa-brands fa-discord"></i></a>
+            <a href="https://twitter.com/antic_rp" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 AnticRP</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
+
+<script type="module">
+    import { w2popup } from 'https://rawgit.com/vitmalina/w2ui/master/dist/w2ui.es6.min.js'
+
+    window.popup1 = function () {
+        w2popup.open({
+            title: 'Wejdź do gry!',
+            text: '<p>Wejdź na stronę<br/><a href="https://fabricmc.net/use/installer/">fabricmc (1.20.1)</a><br/>(ewentualnie załaduj tą wersje używając swojego launchera)<br>następnie pobierz mod <br/><a href="https://modrinth.com/plugin/simple-voice-chat/version/fabric-1.20.1-2.4.29">Simple Voice Chat</a><br/>wgraj go do folderu mods w .minecraft oraz załaduj samą grę.<br><br><h2>mc.anticrp.pl</h2><p>'
+        })
+    }
+
+    window.popup2 = function () {
+        w2popup.open({
+            title: 'Szybkość!',
+            text: '<h2>Na naszym serwerze nie poczujesz żadnych lagów!</h2>'
+        })
+    }
+
+    window.popup3 = function () {
+        w2popup.open({
+            title: 'Voice Chat!',
+            text: '<h2>U nas nie musisz używać chatu, poprostu rozmawiaj z ludźmi!</h2>'
+        })
+    }
+
+    window.popup4 = function () {
+        w2popup.open({
+            title: 'Shadery!',
+            text: '<h2>Na naszym serwerze shadery urozmaicą ci zrogrywke!</h2>'
+        })
+    }
+
+    window.popup5 = function () {
+        w2popup.open({
+            title: 'Modele 3D!',
+            text: '<h2>Modele 3D dodadzą ci bardzo dużo możliwości urozmaicenia swojego domku!</h2>'
+        })
+    }
+
+    window.popup6 = function () {
+        w2popup.open({
+            title: 'Duża mapa!',
+            text: '<h2>Na naszym serwerze łatwo się zgubisz!</h2>'
+        })
+    }
+
+    window.popup7 = function () {
+        w2popup.open({
+            title: 'Urozmaicone PvP!',
+            text: '<h2>Na naszym serwerze poczujesz nowe PvP!</h2>'
+        })
+    }
+</script>
