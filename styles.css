@@ -98,6 +98,14 @@ body {
     cursor: pointer;
 }
 
+.top-btn {
+    color: #333;
+}
+
+.top-btn:hover {
+    color: #ff6b6b
+}
+
 .footer {
     background-color: rgba(255, 255, 255, 0.8);
     padding: 20px;
